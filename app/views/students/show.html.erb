@@ -1,0 +1,18 @@
+<div class="row">
+	<p id="notice"><%= notice %></p>
+	<div class="col-md-6 col-md-offset-3">
+		<div class="well center-it">
+			<h2>
+			  <%= @student.name %>
+			</h2>
+
+			<p>
+			  <%= @student.name %> is in <%= @student.grade.ordinalize %> grade and is currently getting <%= indefinite_articlerize(@student.letter_grade) %> in class.
+			</p>
+
+			<p>
+				<%= link_to 'Edit', edit_student_path(@student), class: "btn btn-warning" %>
+			</p>
+		</div>
+	</div>
+</div>
